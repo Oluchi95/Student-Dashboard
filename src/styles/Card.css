@@ -1,0 +1,78 @@
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  color: var(--dark-text);
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.3em 0.7em;
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.completed {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.priority-high {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.priority-medium {
+  background-color: var(--warning-color);
+  color: var(--dark-text); /* This adjusts text color for yellow */
+}
+
+.priority-low {
+  background-color: var(--info-color);
+  color: white;
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  align-self: flex-start; /* This aligns button to the start within flex column */
+  margin-top: 1rem;
+}
+
+.button-primary:hover {
+  background-color: #0056b3;
+}
