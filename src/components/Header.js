@@ -10,9 +10,8 @@ const Header = () => {
 
   return (
     <header className="dashboard-header">
-      <h1>Student Dashboard</h1>
+      <h1><a href="/" className="home-link">Student Dashboard</a></h1>
       <nav>
-        {/* Hamburger icon for mobile */}
         <div className="hamburger" onClick={toggleMenu}>
           <div className="bar"></div>
           <div className="bar"></div>

@@ -40,6 +40,16 @@
   opacity: 0.8;
 }
 
+.home-link {
+  text-decoration: none;
+  color: inherit; 
+  cursor: pointer; 
+}
+
+.home-link:hover {
+  color: #007bff; 
+}
+
 /* Responsive header */
 @media (max-width: 768px) {
   .dashboard-header {
