@@ -20,7 +20,7 @@
 
 .dashboard-header nav ul {
   list-style: none;
-  margin: 0;
+  margin-right: 5rem;
   padding: 0;
   display: flex;
 }
@@ -47,27 +47,70 @@
 }
 
 .home-link:hover {
-  color: #007bff; 
+  opacity: 0.8;
 }
 
-/* Responsive header */
+/* Hamburger menu styles */
+.hamburger {
+  display: none; /* Hidden by default on desktop */
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  margin-right: 2rem;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
   .dashboard-header {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row; /* Keep header items in row */
     padding: 1rem;
+    align-items: center;
   }
 
   .dashboard-header h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  /* Show hamburger and hide nav by default */
+  .hamburger {
+    display: flex;
   }
 
   .dashboard-header nav ul {
+    display: none; /* Hide nav by default */
     flex-direction: column;
-    gap: 0.5rem;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 1rem 0;
+    gap: 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Show nav when menu is open */
+  .dashboard-header nav ul.open {
+    display: flex;
   }
 
   .dashboard-header nav li {
     margin: 0;
+    padding: 0.5rem 2rem;
+  }
+
+  .dashboard-header nav li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }

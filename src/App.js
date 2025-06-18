@@ -14,7 +14,7 @@ function App() {
       <Header />
       <main className="dashboard-main">
         <section className="dashboard-section" id="completed">
-          <h2>Completed Courses/Projects</h2>
+          <h2>Completed Courses</h2>
           <div className="card-grid">
             {completedCourses.map(course => (
               <CourseCard key={course.id} course={course} />

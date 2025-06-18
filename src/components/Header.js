@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Header.css';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // to manage menu visibility
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
